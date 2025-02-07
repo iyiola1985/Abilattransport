@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <!-- Theme Made By www.w3schools.com -->
-  <title>Bootstrap Theme Company Page</title>
+  <title>ABILAT WEBSITE</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -10,12 +10,15 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
   <style>
   body {
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
     color: black;
-    /* background-image:url(abilat\ logo.jpeg); */
+    background-image:url(abilat\ logo.jpeg); 
+    background-repeat: no-repeat;
     
   }
   h2 {
@@ -33,10 +36,11 @@
     margin-bottom: 30px;
   }  
   .jumbotron {
-    background-color: black;
-    color: #fff;
+    background-color:rgb(196, 62, 196);
+    color: black;
     padding: 100px 25px;
-    font-family: Montserrat, sans-serif;
+    
+    font-family: "Bebas Neue", serif;
   
   }
   .container-fluid {
@@ -68,10 +72,10 @@
     color: black;
   }
   .carousel-indicators li {
-    border-color: #f4511e;
+    border-color: rgb(193, 70, 193);
   }
   .carousel-indicators li.active {
-    background-color: #f4511e;
+    background-color: rgb(193, 70, 193);
   }
   .item h4 {
     font-size: 19px;
@@ -194,6 +198,68 @@
     }
   
   }
+  /* Styling the social media icons */
+.social-icons a {
+  font-size: 50px; /* Set the size of the icons */
+  margin: 10px;    /* Add space between the icons */
+  color: #f4511e;  /* Set icon color (example: orange) */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Change icon color on hover */
+.social-icons a:hover {
+  color: rgb(196, 62, 196);  /* Change color when hovered (example: dark gray) */
+}
+#contact{
+  background-color: brown
+}
+/* Style for the contact section */
+#contact {
+  padding: 50px 0; /* Adding some padding */
+  background-color: #f7f7f7; /* Set background color */
+  text-align: center;
+}
+
+/* Style for the heading */
+#contact h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333; /* Dark text color for contrast */
+  margin-bottom: 30px; /* Space between the heading and icon */
+}
+
+/* Style for the WhatsApp icon */
+.social-icon {
+  display: inline-block;
+  font-size: 100px; /* Make the icon bigger */
+  color: #25D366; /* WhatsApp green color */
+  text-decoration: none;
+  transition: transform 0.3s ease; /* Add animation effect */
+}
+
+/* Hover effect for the icon */
+.social-icon:hover {
+  transform: scale(1.1); /* Slight zoom effect */
+  
+}
+
+/* Style for the WhatsApp icon inside the link */
+.social-icon i {
+  display: block;
+  margin: 0 auto; /* Center the icon */
+}
+
+/* Optional: Make sure it's responsive on mobile */
+@media (max-width: 768px) {
+  .social-icon {
+    font-size: 60px; /* Slightly smaller icon on mobile */
+  }
+  #contact h2 {
+    font-size: 24px; /* Smaller heading text */
+  }
+}
+
+
   
   </style>
 </head>
@@ -215,32 +281,14 @@
   </nav>
       
       
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#services">SERVICES</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
-        <li><a href="#pricing">PRICING</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </div>
+    
   </div>
-</nav>
+
 
 <div class="jumbotron text-center">
   <h1>ABI-LAT </h1> 
-  <p>Transport service Limited</p>
-   
-  <form>
-    <div class="input-group">
-      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
-      <div class="input-group-btn">
-        <button type="button" class="btn btn-danger">Subscribe</button>
-      </div>
-    </div>
-  </form>
-</div>
+  <h1>Transport service Limited <h1>
+   </div>
 
 <!-- Container (About Section) -->
 <div id="about" class="container-fluid">
@@ -249,10 +297,10 @@
       <h2>About Company </h2><br>
       <h4>"ABI-LAT Transport Service Limited is dedicated to providing reliable, efficient, and safe transportation solutions, ensuring your goods reach their destination with professionalism and care."</h4><br>
       <p></p>
-      <br><button class="btn btn-default btn-lg">Get in Touch</button>
+      <a href="#contact"><button class="btn btn-default btn-lg">CONTACT US NOW</button></a>
     </div>
     <div class="col-sm-4">
-      <img src="abilat logo.jpeg" alt="Paris" width="450" height="800">
+      <!-- <img src="abilat logo.jpeg" alt="Paris" width="450" height="800"> -->
 
     </div>
       </div>
@@ -386,51 +434,26 @@
 
 <!-- Container (Contact Section) -->
 <div id="contact" class="container-fluid bg-grey">
-  <h2 class="text-center">CONTACT</h2>
-  <div class="row">
-    <div class="col-sm-5">
-      <p>Contact us and we'll get back to you within 24 hours.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
-      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
-    </div>
-    <div class="col-sm-7 slideanim">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-        </div>
-      </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-      <div class="row">
-        <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
-        </div>
-      </div>
-    </div>
+  <h2 class="text-center">CONTACT US ON WHATS'S APP</h2>
+  <a href="https://wa.me/254700130036" class="social-icon" aria-label="WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+  </div>
   </div>
 </div>
 
-<!-- Image of location/map -->
+
+<!-- footer icon -->
 
 
 <footer>
   <div class="footer-content">
     <p>&copy; 2025 ABILAT. All rights reserved.</p>
-    <div class="social-icons">
-      <a href="#" class="social-icon" aria-label="Facebook"><ion-icon name="logo-facebook"></ion-icon></a>
-      <a href="https://www.instagram.com/suddenllyworld/profilecard/?igsh=MXh6b3RjdDZoMmVicg==" class="social-icon" aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
-      <a href="https://www.tiktok.com/@suddenlylatin?_t=ZM-8sqAN15CoZq&_r=1" class="social-icon" aria-label="TikTok"><ion-icon name="logo-tiktok"></ion-icon></a>
-      <a href="https://x.com/ebensholle?s=21" class="social-icon" aria-label="Twitter"><ion-icon name="logo-twitter"></ion-icon></a>
-      <a href="https://www.youtube.com/@IYIOLAOLUSOLAEBENEZER-w9g" class="social-icon" aria-label="YouTube"><ion-icon name="logo-youtube"></ion-icon></a>
-      <a href="https://wa.me/254700130036" class="social-icon" aria-label="WhatsApp"><ion-icon name="logo-whatsapp"></ion-icon></a>
-      <a href="https://github.com/iyiola1985" class="social-icon" aria-label="GitHub"><ion-icon name="logo-github"></ion-icon></a>
-      <a href="https://www.linkedin.com/in/the-iyiola%E2%80%99s-8589021a4/" class="social-icon" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
     </div>
   </div>
 </footer>
+
+
 
 <script>
 $(document).ready(function(){
